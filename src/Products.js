@@ -16,7 +16,7 @@ function Products(props) {
       <h1>{props.Name}</h1>
       <h6>{props.Price}</h6>
       <a href={props.Webpage}>
-      {/* <button>Click To Purchase</button> trying to figure this out */}
+      <button>Click To Purchase</button> 
       </a>
       
     </>
