@@ -1,68 +1,157 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt Text](https://media.giphy.com/media/26BRHHtEXdVVxVFmw/giphy.gif)
 
-## Available Scripts
+<br>
+<br>
+<br>
 
-In the project directory, you can run:
+# Destination-Curl
 
-### `npm start`
+### Project Overview
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Did you know that more than 60% of women have curly hair which makes for a mosaic of curl types, curl structures, and curl styles on display everyday. Recently there's been this revolution in hair to focus on curls. No longer are women, heating, straightening, or chemically treating their curls. They are wearing them proudly big, bold, and free. Destination Curl is the online e-commerce equivalent to Sephora for curly girls. We want them to feel at home on our site, while buying products with confidence because they trust us with their precious curls. Also, we want them to engage daily with the site and gain useful tips/tricks on how to love their curls. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+*designed for mobile devices (iPad and iPhone) as well
+<br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Wireframes
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![https://wireframe.cc/E8U9Xt] (url)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Desktop Landing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![https://wireframe.cc/3UuOfS](url)
 
-### `npm run eject`
+- Desktop Resource Show (Product)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![https://wireframe.cc/uaRCtf](url)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Desktop Resource Index (Hairstyle Ideas)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![https://wireframe.cc/wx8qGQ](url)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Tablet Resource Index
 
-## Learn More
+![https://wireframe.cc/ymGrNk](url)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Mobile Resource Index
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+### MVP
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The **Destination Curl** MVP will provide a good starting point for the website. It would introduce consumers to the website by first educating them on the different curl types on the landing page. The products featured would help the consumer make informed decisions on purchases with clickable links to the product page. Here, the consumer would find additional product info and links to learn more about he seller/brands featured. The site would also feature DIY Hairstyle ideas to make styling hair easier for consumers. Also, we want this to be collaborative as consumers will be able to upload their own styles. 
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+#### Goals
 
-### Making a Progressive Web App
+- Use (2) external Airtable data sets 
+- Render API data from Airtable on page 
+- Allow users to click on product images (which redirect to individual product pages)
+- Allow users to create a post and upload Hairstyle ideas
+- External links to seller pages on product pages
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<br>
 
-### Advanced Configuration
+#### Libraries 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+|     Library       |                                     Description                                            |
+| :--------------:  | :-----------------------------------------------------------------------------------------:|
+| React Router Dom  | _A tool that allows me to handle routes in a web app, using dynamic routing._              |
+| Styled-Components | _A toole that will allow me to write actual CSS in your JavaScript._                       |
+|    Axios          | _A promise-based HTTP client that is used for making HTTP requests to fetch or save data._ |
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+<br>
 
-### `npm run build` fails to minify
+#### Data
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+|    API     | Quality Docs? |                              Website                                  |                     
+| :--------: | :-----------: | :--------------------------------------------------------------------:| 
+| AirtableAPI|      no       | https://airtable.com/tblgWcItkHpk43HNw/viwyQcDI3557LF6uF?blocks=hide  |
+
+<br>
+
+#### Component Hierarchy
+
+```
+src
+|__ assets/
+      |__ data-tests
+      |__ fonts
+      |__ graphics
+      |__ images
+      |__ mockups
+|__ components/
+      |__ App.jsx
+      |__ Homepage.jsx
+      |__ Product.jsx
+      |__ Style_Ideas.jsx
+      |__ Navigation.jsx
+      |__ Header.jsx
+```
+
+<br>
+
+#### Component Breakdown
+
+
+|  Component   |    Type    | state | props |                                 Description                                           |
+| :----------: | :--------: | :---: | :---: | :------------------------------------------------------------------------------------:|
+|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._                                    |
+|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._                            |
+|   Homepage   | functional |   n   |   n   | _The homepage will render product images using cards in flexbox._                     |
+|    Product   | functional |   y   |   y   | _The product will serve as states, render the info as props, and link to seller info._|
+|  Style Ideas | functional |   n   |   n   | _The style idea pages will show tips and allow users to upload suggestions._          |
+
+<br>
+
+#### Component Estimates
+
+
+| Task                | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Uploading data      |    H     |     3 hrs      |     TBD       |     TBD     |
+| Gathering Content   |    H     |     4 hrs      |     TBD       |     TBD     |
+| Building JS file    |    H     |     7 hrs      |     TBD       |     TBD     |
+| Building CSS file   |    H     |     9 hrs      |     TBD       |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     TBD       |     TBD     |
+| Deployment          |    H     |     1 hrs      |     TBD       |     TBD     |
+| TOTAL               |          |    27 hrs      |     TBD       |     TBD     |
+
+<br>
+
+#### Helper Functions (TBD)
+
+
+|  Function  | Description                      |
+| :--------: | :-------------------------------:|
+| TBD        |   _TBD_                          |
+
+
+<br>
+
+### Post-MVP
+
+
+- _Carousel of products dispayed by curl type on Homepage._
+- _Price displayed inside product image on Homepage._
+- _User ability to embed Youtube video on Style Idea page._
+- _Hairstyle ideas would be clickable images for more info._
+- _Sections that features local stylists and/or more info on product sellers._
+
+<br>
+
+***
+
+## Project Delivery
+
+### Code Showcase
+
+> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
+### Code Issues & Resolutions
+
+> Use this section to list of all major issues encountered and their resolution, if you'd like.
