@@ -1,23 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Link } from 'react-router-dom'
 import './App.css';
+import styled from 'styled-components'
+import Homepage from './Homepage.js';
+import Curlstyle from './Curlstyle.js';
+import Blog from './Blog.js';
+import Products from './Products.js';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Destination Curl</h1>
+        <h3> Curl Bar >>></h3>
+      <nav>
+          <Link to="/">Homepage</Link>
+          <Link to="/curlstyle-ideas">DIY Curlstyle Ideas</Link>
+          <Link to="/curl-blog">Curl Blog</Link>
+      </nav>
+      <Route path="/" exact>
+        <Homepage />
+      </Route>
+      {/* <Route path="/curlstyle-ideas">
+        <Curlstyle />
+      </Route>
+      <Route path="/curl-blog">
+        <Blog />
+      </Route> */}
+      <Route path="/:products">
+        <Products />
+      </Route>
+      
       </header>
     </div>
   );
