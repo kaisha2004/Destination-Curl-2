@@ -31,7 +31,7 @@ function CreatePost(props) {
   }
 
   return <form onSubmit={handleSubmit}>
-    <h2>Upload Your Curly Post</h2>
+    <h2 className="form_title">Upload Your Curly Post</h2>
     <label htmlFor="Image">Gif</label>
     <input type="text" id="Image" placeholder="URL" onChange={e => updateImage(e.target.value)} value={Image} />
     <label htmlFor="Title">Title</label>
@@ -41,7 +41,7 @@ function CreatePost(props) {
     <br />
     <label htmlFor="Text">Directions</label>
     <textarea name="Text" id="Text" cols="30" rows="10" onChange={e => updateText(e.target.value)} value={Text}></textarea>
-    <input type="submit" value="Upload Your Post" />
+    <input type="submit" value="Upload Your Post" className="product_btn"/>
   </form>
 
 }

@@ -36,7 +36,7 @@ function CreateStyle(props) {
     <br />
     <label htmlFor="Directions">Directions</label>
     <textarea name="Directions" id="Directions" cols="30" rows="10" onChange={e => updateDirections(e.target.value)} value={Directions}></textarea>
-    <input type="submit" value="Upload Your Style" className="style_btn" />
+    <input type="submit" value="Upload Your Style" className="product_btn" />
   </form>
 
 }
