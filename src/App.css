@@ -14,6 +14,7 @@
 * light yellow: #fffae3
 * lavender: #f1e3f3
 * magenta: #f20089
+*charcoal: #424b54
 
 */
 
@@ -173,6 +174,44 @@ body:before {
   margin-top: -32767px;
  
 }
+
+
+/* PRODUCT PAGE STYLING */
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product_image {
+ height: 230px;
+ width: auto;
+ align-items: center;
+}
+.product_title {
+  color:#f20089;
+  font-size: 19px;
+  line-height: 1rem;
+  margin: 10px;
+  text-align: center;
+}
+.product_info{
+  text-align: center;
+  line-height: 10px;
+  color: #424b54;
+  font-size: 17px;
+}
+.product_description {
+  color: #424b54;
+  text-align: justify;
+  margin: 10px 30px 30px 30px;
+}
+.product_btn {
+  background-color: #4a2545;
+  color: white;
+  font-weight: bold;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
