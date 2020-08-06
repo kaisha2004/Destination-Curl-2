@@ -28,7 +28,7 @@ function CreateStyle(props) {
   }
 
   return <form onSubmit={handleSubmit}>
-    <h2>Upload Your Own DIY Style</h2>
+    <h2 className="form_title">Upload Your Own DIY Style</h2>
     <label htmlFor="Name">Name</label>
     <input type="text" id="Name" onChange={e => updateName(e.target.value)} value={Name} />
     <label htmlFor="Image">Image</label>
@@ -36,7 +36,7 @@ function CreateStyle(props) {
     <br />
     <label htmlFor="Directions">Directions</label>
     <textarea name="Directions" id="Directions" cols="30" rows="10" onChange={e => updateDirections(e.target.value)} value={Directions}></textarea>
-    <input type="submit" value="Upload Your Style" />
+    <input type="submit" value="Upload Your Style" className="product_btn" />
   </form>
 
 }

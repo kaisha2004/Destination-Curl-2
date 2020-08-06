@@ -28,7 +28,6 @@ function App() {
   },[])
   return (
     <div className="wrap">
-      {/* <div className="main"> */}
        <header>
          <h1>Destination Curl</h1>
           <nav>
@@ -50,7 +49,7 @@ function App() {
        <Route path="/product/:name">
         <Product products={products} />
        </Route>
-    {/* </div> */}
+    
       <footer >
        <hr class="style-eight" />
       </footer>
