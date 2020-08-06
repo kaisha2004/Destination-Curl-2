@@ -254,7 +254,8 @@ form {
   display: flex;
   flex-direction: column;
   color:#424b54; 
-  line-height: 1.8rem;
+  line-height: 1.9rem;
+  margin-left: 10px;;
 }
 .form_title {
   margin-top: 50px;
