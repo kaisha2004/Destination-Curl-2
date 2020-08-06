@@ -30,9 +30,9 @@ function Blog() {
       <section className="center">
       <h1 className='style_title'>Curl Blog</h1>
       {posts.map((post) => (
-          <div>
+          <div className="style_info">
             <img src={post.fields.Image} className="blog_images"></img>
-          <h3 className="style_name">{post.fields.Title} </h3>
+          <h3 className="post_name">{post.fields.Title} </h3>
           <div className="blog_info">
            <h4>Author: {post.fields.Author} </h4>
             <h4>Date: {post.fields.Created_At} </h4>
