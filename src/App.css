@@ -220,7 +220,8 @@ body:before {
 
 .style_title{
   color: #f20089;
-  font-size: 34px;
+  font-size: 45px;
+  font-family: cursive;
 }
 .style_info {
   display: flex;
@@ -253,7 +254,7 @@ form {
   display: flex;
   flex-direction: column;
   color:#424b54; 
-  line-height: 1.4rem;
+  line-height: 1.8rem;
 }
 .form_title {
   margin-top: 50px;
@@ -261,6 +262,20 @@ form {
 }
 
 
+
+
+/* BLOG PAGE STYLING */
+
+.blog_images {
+  margin-top: 20px;
+  width: 180px;
+  border-radius: 30px;
+}
+.blog_info {
+  color:#4a2545;
+  text-align: center;
+  margin: 15px 0px;
+}
 
 
 

@@ -32,7 +32,7 @@ function CreatePost(props) {
 
   return <form onSubmit={handleSubmit}>
     <h2>Upload Your Curly Post</h2>
-    <label htmlFor="Image">Image</label>
+    <label htmlFor="Image">Gif</label>
     <input type="text" id="Image" placeholder="URL" onChange={e => updateImage(e.target.value)} value={Image} />
     <label htmlFor="Title">Title</label>
     <input type="text" id="Title" onChange={e => updateTitle(e.target.value)} value={Title} />

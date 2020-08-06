@@ -27,19 +27,21 @@ function Blog() {
   },[])
   return (
     <>
-      <h1>Curl Blog</h1>
-      {posts.map((post) => {
-        return (
+      <section className="center">
+      <h1 className='style_title'>Curl Blog</h1>
+      {posts.map((post) => (
           <div>
-            
-            <img src={post.fields.Image}></img>
-            <h3>{post.fields.Title} by {post.fields.Author}</h3>
-            <h4>{post.fields.Created_At}</h4>
-            <p>{post.fields.Text}</p>
+            <img src={post.fields.Image} className="blog_images"></img>
+          <h3 className="style_name">{post.fields.Title} </h3>
+          <div className="blog_info">
+           <h4>Author: {post.fields.Author} </h4>
+            <h4>Date: {post.fields.Created_At} </h4>
           </div>
-        )
-      })}
+            <p className="style_directions">{post.fields.Text}</p>
+          </div>
+        ))}
       <CreatePost updateFetchPosts={updateFetchPosts} fetchPosts={fetchPosts}/>
+     </section>
     </>
   )
 }
