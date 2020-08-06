@@ -1,22 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Open+Sans&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Open+Sans&family=Cabin+Sketch&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet');
+
+/* 
+* bone: #ffffff
+* teal: #25ced1
+* mint: #40C9A2
+* peach: #fceade
+* naranja: #orange
+* coral: #ea526f
+* eggplant: #4a2545
+* grey: #efefef
+* light mint: #ecf8f8
+* light yellow: #fffae3
+* lavender: #f1e3f3
+* magenta: #f20089
+
+*/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
 }
- img{
-   width: 200px;
- }
+header {
+  background-color: #2dc2bd;
+  margin: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15px;
+}
 
 h1 {
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 37px;
 }
-.App {
-  text-align: center;
+a:hover {
+  text-decoration-line: underline;
+}
+nav a {
+  color: white;
+  font-size: 0.9em;
+  margin: 10px;
+}
+img {
+  width: 80px;
+  border-radius: 60%;
+}
+.curls {
+  width: 120px;
+  height: 120px;
+}
+.twocee {
+  background-color: #ecf8f8;
+  display: flex;
+  padding: 10px;
+  height: 200px;
+  margin: 0px;
+}
+.twotitle {
+  background-color: #ecf8f8;
+  padding: 20px 0px 0px 0px;
+  font-family: "Cabin Sketch", cursive;
+  color: #f20089;
+  margin: 0px;
+}
+.threecee {
+  background-color: #fffae3;
+  display: flex;
+  padding: 10px;
+  height: 220px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.threetitle {
+  background-color: #fffae3;
+  padding: 20px 0px 0px 0px;
+  margin: 0px;
+  font-family: "Oleo Script", cursive;
+  color: #f20089;
+}
+.fourcee {
+  background-color: #f1e3f3;
+  display: flex;
+  padding: 10px;
+  height: 200px;
+  margin: 0px;
+}
+.fourtitle {
+  background-color: #f1e3f3;
+  padding: 20px 0px 0px 0px;
+  margin: 0px;
+  font-family: "Oleo Script", cursive;
+  color: #f20089;
+}
+
+a {
+  font-size: 11px;
+  color: #4a2545;
+  text-decoration: none;
+}
+
+
+hr.style-four {
+  padding: 0;
+  border: none;
+  border-top: medium double #e76f51;
+  color: #e76f51;
+  text-align: center;
+  margin: 0px;
+  }
+  hr.style-four:after {
+  content: 'Designed by Kai Smith';
+  display: inline-block;
+  position: relative;
+  font-size: -0.7em;
+  padding: 0 0.25em;
+  background: white;
+  
+  }
+  hr.style-eight {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #e76f51;
+    color: white;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "KS Designs";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    font-family: Savoye LET;
+    padding: 0 0.25em;
+    background: #e76f51;
+}
+* {
+  box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+  box-sizing: border-box;
+ }
+ html,
+ body {
+  height: 100%;
+  position: relative;
+ }
+ .wrap {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; 
+ }
+ footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+ 
 }
 
 @media (prefers-reduced-motion: no-preference) {

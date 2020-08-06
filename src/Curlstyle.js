@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import CreateStyle from "./CreateStyle"
+import styled from 'styled-components'
 
 
 function Curlstyle() {
