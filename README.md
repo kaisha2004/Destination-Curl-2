@@ -10,7 +10,7 @@
 
 Did you know that more than 60% of women have curly hair which makes for a mosaic of curl types, curl structures, and curl styles on display everyday. Recently there's been this revolution in hair to focus on curls. No longer are women, heating, straightening, or chemically treating their curls. They are wearing them proudly big, bold, and free. Destination Curl is the online e-commerce equivalent to Sephora for curly girls. We want them to feel at home on our site, while buying products with confidence because they trust us with their precious curls. Also, we want them to engage daily with the site and gain useful tips/tricks on how to love their curls. 
 
-*designed for mobile devices (iPad and iPhone) as well
+*designed for mobile devices (iPad and iPhone X) as well
 <br>
 
 
@@ -21,19 +21,19 @@ Did you know that more than 60% of women have curly hair which makes for a mosai
 
 - Desktop Landing
 
-![https://wireframe.cc/3UuOfS](url)
+![https://wireframe.cc/3UuOfS] (url)
 
 - Desktop Resource Show (Product)
 
-![https://wireframe.cc/uaRCtf](url)
+![https://wireframe.cc/uaRCtf] (url)
 
 - Desktop Resource Index (Hairstyle Ideas)
 
-![https://wireframe.cc/wx8qGQ](url)
+![https://wireframe.cc/wx8qGQ] (url)
 
 - Tablet Resource Index
 
-![https://wireframe.cc/ymGrNk](url)
+![https://wireframe.cc/ymGrNk] (url)
 
 - Mobile Resource Index
 
@@ -113,25 +113,16 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Uploading data      |    H     |     3 hrs      |     TBD       |     TBD     |
-| Gathering Content   |    H     |     4 hrs      |     TBD       |     TBD     |
-| Building JS file    |    H     |     7 hrs      |     TBD       |     TBD     |
-| Building CSS file   |    H     |     9 hrs      |     TBD       |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     TBD       |     TBD     |
-| Deployment          |    H     |     1 hrs      |     TBD       |     TBD     |
-| TOTAL               |          |    27 hrs      |     TBD       |     TBD     |
+| Uploading data      |    H     |     3 hrs      |     3 hrs     |     3 hrs   |
+| Gathering Content   |    H     |     4 hrs      |     5 hrs     |     5 hrs   |
+| Building JS file    |    H     |     7 hrs      |     7 hrs     |     7 hrs   |
+| Building CSS file   |    H     |     9 hrs      |     9 hrs     |     9 hrs   |
+| Create CRUD Actions |    H     |     3 hrs      |     5 hrs     |     5 hrs   |
+| Deployment          |    H     |     1 hr       |     1 hr      |     1 hr    |
+| TOTAL               |          |    27 hrs      |     30 hrs    |    30 hrs   |
 
 <br>
 
-#### Helper Functions (TBD)
-
-
-|  Function  | Description                      |
-| :--------: | :-------------------------------:|
-| TBD        |   _TBD_                          |
-
-
-<br>
 
 ### Post-MVP
 
@@ -150,8 +141,21 @@ src
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+I encountered some issues with my data and my code was displaying all products not customized by curl type. After some time, I found a method that worked but it was several lines of code. However, I challenged myself to refactor abd was able to condense the solution to one line by using both the filer, includes, and map methods. 
+```
+ {products.filter(product => product.fields.CurlType.includes('3C')).map(product => (
+          <div>
+            <img src={product.fields.Image} alt='3cproducts'></img>
+            <Link key={product.fields.Name} to={`/product/${product.fields.Name}`}>
+              <p>{product.fields.Seller_Info}{product.fields.Name}</p>
+            <p>{product.fields.Price}</p>
+            </Link>
+          </div>
+      ))}
+```
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+1) API data was not working on both forms (Create Blog Post and Create A Style). This took really getting comfortable with Airtable documentation and toying around with the code so that it's in the format best for Airtable. Often times, we want to rush the reading portion with APIs and it costs us even more time in the end rather than doing the due diligence up front to read the usage documentation. 
+
+2) I had issues with setting different media queries. After spendng some time and getting feedback from others, I realized it was do to having the word "device" in the code. However, this took hours to identify what should have been a simple solution. I learned that every word counts and this process gave me the critical eye to evaluate all parts of the code and deem what's necessary, which helps with refactoring and keeping the code DRY. 
