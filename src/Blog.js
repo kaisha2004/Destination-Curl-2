@@ -28,7 +28,7 @@ function Blog() {
   return (
     <>
       <section className="center">
-      <h1 className='style_title'>Curl Blog</h1>
+      <h1 className='style_title'>Curl Struggle Blog</h1>
       {posts.map((post) => (
           <div className="style_info" >
             <img src={post.fields.Image} className="blog_images" alt='blog_images'></img>
