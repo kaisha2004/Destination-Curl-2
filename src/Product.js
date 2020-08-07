@@ -13,7 +13,7 @@ function Product(props) {
   return (
     <>
       <section className="center">
-        <img src={product.fields.Image} className="product_image"></img>
+        <img src={product.fields.Image} className="product_image" alt='productos'></img>
         <div className="product_title">
           <h3>{product.fields.Name}</h3>
           <h3>{product.fields.Price} </h3>

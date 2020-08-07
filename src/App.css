@@ -20,6 +20,8 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 header {
   background-color: #2dc2bd;
@@ -54,17 +56,17 @@ img {
 .curls {
   width: 120px;
   height: 120px;
+  margin: 0px 80px 0px 50px;
 }
 .twocee {
   background-color: #ecf8f8;
   display: flex;
-  padding: 10px;
-  height: 200px;
-  margin: 0px;
+  padding: 10px 10px 0px 10px;
+  height: 200px; 
 }
 .twotitle {
   background-color: #ecf8f8;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 20px;
   font-family: "Cabin Sketch", cursive;
   color: #f20089;
   margin: 0px;
@@ -72,14 +74,14 @@ img {
 .threecee {
   background-color: #fffae3;
   display: flex;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   height: 220px;
   margin: 0px;
 }
 
 .threetitle {
   background-color: #fffae3;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 20px;
   margin: 0px;
   font-family: "Oleo Script", cursive;
   color: #f20089;
@@ -87,23 +89,24 @@ img {
 .fourcee {
   background-color: #f1e3f3;
   display: flex;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   height: 200px;
   margin: 0px;
 }
 .fourtitle {
   background-color: #f1e3f3;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 20px;
   margin: 0px;
   font-family: "Oleo Script", cursive;
   color: #f20089;
 }
 
 a {
-  font-size: 11px;
+  font-size: 13px;
   color: #4a2545;
   text-decoration: none;
-  margin: 0px 50px 0px 50px;
+  padding: 0px 70px 0px 70px;
+  margin: 0px 130px 0px 130px;
   word-wrap: break-word;
 }
 
@@ -257,9 +260,9 @@ form {
   display: flex;
   flex-direction: column;
   color:#424b54; 
-  line-height: 5rem;
+  line-height: 3rem;
   margin-left: 20px;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 .form_title {
   margin-top: 50px;
@@ -292,34 +295,24 @@ form {
   margin: 20px 0px 0px 0px;
 }
 
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 812px) 
+{ 
+    a {
+      font-size: 11px;
+      color: #4a2545;
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      word-wrap: break-word;
+    }
+    
+    .curls {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

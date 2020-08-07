@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import CreatePost from "./CreatePost"
-import styled from 'styled-components'
+
 
 
 function Blog() {
@@ -30,8 +30,8 @@ function Blog() {
       <section className="center">
       <h1 className='style_title'>Curl Blog</h1>
       {posts.map((post) => (
-          <div className="style_info">
-            <img src={post.fields.Image} className="blog_images"></img>
+          <div className="style_info" >
+            <img src={post.fields.Image} className="blog_images" alt='blog_images'></img>
           <h3 className="post_name">{post.fields.Title} </h3>
           <div className="blog_info">
            <h4>Author: {post.fields.Author} </h4>

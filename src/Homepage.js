@@ -14,7 +14,7 @@ function Homepage(props) {
       <img src={two_curls} className="curls" alt="2C" />
       {products.filter(product => product.fields.CurlType.includes('2C')).map(product => (
           <div>
-            <img src={product.fields.Image}></img>
+            <img src={product.fields.Image} alt='2cproducts'></img>
             <Link key={product.fields.Name} to={`/product/${product.fields.Name}`}>
               <p>{product.fields.Seller_Info}{product.fields.Name}</p>
             <p>{product.fields.Price}</p>
@@ -27,7 +27,7 @@ function Homepage(props) {
       <img src={three_curls} className="curls" alt="3C" />
       {products.filter(product => product.fields.CurlType.includes('3C')).map(product => (
           <div>
-            <img src={product.fields.Image}></img>
+            <img src={product.fields.Image} alt='3cproducts'></img>
             <Link key={product.fields.Name} to={`/product/${product.fields.Name}`}>
               <p>{product.fields.Seller_Info}{product.fields.Name}</p>
             <p>{product.fields.Price}</p>
@@ -41,7 +41,7 @@ function Homepage(props) {
       
       {products.filter(product => product.fields.CurlType.includes('4C')).map(product => (
           <div>
-            <img src={product.fields.Image}></img>
+            <img src={product.fields.Image} alt='4cproducts'></img>
             <Link key={product.fields.Name} to={`/product/${product.fields.Name}`}>
               <p>{product.fields.Seller_Info}{product.fields.Name}</p>
             <p>{product.fields.Price}</p>

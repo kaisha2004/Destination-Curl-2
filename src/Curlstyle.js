@@ -26,7 +26,7 @@ function Curlstyle() {
         <h2 className='style_title'>DIY Curl Styles</h2>
         {styles.map((style) => (
           <div className='style_info'>
-            <img src={style.fields.Image} className="style_images"></img>
+            <img src={style.fields.Image} className="style_images" alt='style_ideas'></img>
             <h4 className="style_name">{style.fields.Name}</h4>
             <p className="style_directions"><span>Directions:</span> {style.fields.Directions}</p>
           </div>
