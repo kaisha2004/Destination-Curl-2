@@ -30,7 +30,6 @@ function CreatePost(props) {
     updateAuthor('')
     updateText('')
     updateImage('')
-    
   }
 
   return <form onSubmit={handleSubmit}>
@@ -41,7 +40,6 @@ function CreatePost(props) {
     <input type="text" id="Title" onChange={e => updateTitle(e.target.value)} value={Title} />
     <label htmlFor="Author">Author:</label>
     <input type="text" id="Author" onChange={e => updateAuthor(e.target.value)} value={Author} />
-    <br />
     <label htmlFor="Text">Directions:</label>
     <textarea name="Text" id="Text" cols="30" rows="10" onChange={e => updateText(e.target.value)} value={Text}></textarea>
     <input type="submit" value="Upload Your Post" className="product_btn"/>

@@ -33,7 +33,6 @@ function CreateStyle(props) {
     <input type="text" id="Name" onChange={e => updateName(e.target.value)} value={Name} />
     <label htmlFor="Image">Image</label>
     <input type="text" id="Image" placeholder="URL" onChange={e => updateImage(e.target.value)} value={Image} />
-    <br />
     <label htmlFor="Directions">Directions</label>
     <textarea name="Directions" id="Directions" cols="30" rows="10" onChange={e => updateDirections(e.target.value)} value={Directions}></textarea>
     <input type="submit" value="Upload Your Style" className="product_btn" />

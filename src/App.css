@@ -19,6 +19,7 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 header {
   background-color: #2dc2bd;
@@ -102,6 +103,8 @@ a {
   font-size: 11px;
   color: #4a2545;
   text-decoration: none;
+  margin: 0px 50px 0px 50px;
+  word-wrap: break-word;
 }
 
 
@@ -254,8 +257,9 @@ form {
   display: flex;
   flex-direction: column;
   color:#424b54; 
-  line-height: 1.9rem;
-  margin-left: 10px;;
+  line-height: 5rem;
+  margin-left: 20px;
+  font-size: 0.5rem;
 }
 .form_title {
   margin-top: 50px;
