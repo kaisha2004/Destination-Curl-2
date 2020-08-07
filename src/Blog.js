@@ -24,7 +24,7 @@ function Blog() {
       updatePosts(data.data.records)
     }
     makeApiCall()
-  },[])
+  },[fetchPosts])
   return (
     <>
       <section className="center">

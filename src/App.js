@@ -51,7 +51,7 @@ function App() {
        </Route>
     
       <footer >
-       <hr class="style-eight" />
+       <hr className="style-eight" />
       </footer>
     </div>
   );

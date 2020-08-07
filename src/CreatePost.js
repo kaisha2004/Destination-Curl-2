@@ -7,6 +7,7 @@ function CreatePost(props) {
   const [Author, updateAuthor] = useState('')
   const [Text, updateText] = useState('')
   const [Image, updateImage] = useState('')
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -15,7 +16,8 @@ function CreatePost(props) {
         Title: Title,
         Author: Author,
         Text: Text,
-        Image: Image
+        Image: Image,
+        
       }
     }, {
       headers: {
@@ -28,18 +30,19 @@ function CreatePost(props) {
     updateAuthor('')
     updateText('')
     updateImage('')
+    
   }
 
   return <form onSubmit={handleSubmit}>
-    <h2 className="form_title">Upload Your Curly Post</h2>
-    <label htmlFor="Image">Gif</label>
+    <h2 className="form_title">Upload Your Curly Struggle!</h2>
+    <label htmlFor="Image">Gif:</label>
     <input type="text" id="Image" placeholder="URL" onChange={e => updateImage(e.target.value)} value={Image} />
-    <label htmlFor="Title">Title</label>
+    <label htmlFor="Title">Title:</label>
     <input type="text" id="Title" onChange={e => updateTitle(e.target.value)} value={Title} />
-    <label htmlFor="Author">Author</label>
+    <label htmlFor="Author">Author:</label>
     <input type="text" id="Author" onChange={e => updateAuthor(e.target.value)} value={Author} />
     <br />
-    <label htmlFor="Text">Directions</label>
+    <label htmlFor="Text">Directions:</label>
     <textarea name="Text" id="Text" cols="30" rows="10" onChange={e => updateText(e.target.value)} value={Text}></textarea>
     <input type="submit" value="Upload Your Post" className="product_btn"/>
   </form>

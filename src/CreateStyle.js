@@ -9,7 +9,7 @@ function CreateStyle(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const data = await axios.post("https://api.airtable.com/v0/appFhr7txjsns0HMI/Table%201", {
+    const data = await axios.post("https://api.airtable.com/v0/app8FUw6Pn8QvappH/Table%201", {
       fields: {
         Name: Name,
         Image: Image,

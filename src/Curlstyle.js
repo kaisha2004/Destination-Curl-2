@@ -19,7 +19,7 @@ function Curlstyle() {
       updateStyles(data.data.records)
     }
     makeApiCall()
-  }, [])
+  }, [fetchStyles])
   return (
     <>
       <section className="center">
